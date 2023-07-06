@@ -1,3 +1,25 @@
-export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+import { MainMenu } from "./MainMenu";
+import { OptionsMenu } from "./OptionsMenu";
+import { useState } from "react";
+import { MENU_STATE } from "./consts/menu";
+
+function Content() {
+  const [shownMenu, setShownMenu] = useState(MENU_STATE.main);
+
+  if (shownMenu === MENU_STATE.main) {
+    return <MainMenu setShownMenu={setShownMenu} />;
+  }
+
+  if (shownMenu === MENU_STATE.options) {
+    return <OptionsMenu setShownMenu={setShownMenu} />;
+  }
 }
+
+export default function App() {
+  return (
+    <div className="bg-gray-900 w-screen h-screen text-green-400 flex justify-center align-middle items-center">
+      <Content />
+    </div>
+  );
+}
+// https://tailwind.build/classes
