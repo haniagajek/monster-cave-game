@@ -5,6 +5,10 @@ export function Game(props) {
   const [gamePanel, setGamePanel] = useState("first");
   const name = "";
 
+  const dontLie = `DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE 
+  DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE  DON'T LIE DON'T LIE DON'T LIE  DON'T LIE DON'T LIE DON'T LIE  DON'T LIE DON'T LIE DON'T LIE   DON'T LIE DON'T LIE DON'T LIE 
+  `;
+
   const handleKeyDown = (event, name) => {
     if (event.key === "Enter") {
       name = event.target.value;
@@ -23,10 +27,7 @@ export function Game(props) {
           </h1>
         </div>
         <div className="flex gap-12 mt-4">
-          <Button
-            content={`YEAH, ${name}`}
-            onClick={() => setGamePanel("second")}
-          />
+          <Button content="YEAH" onClick={() => setGamePanel("second")} />
           <Button content="SORRY" onClick={() => setGamePanel("second")} />
         </div>
       </Menu>
@@ -56,55 +57,26 @@ export function Game(props) {
   if (gamePanel === "third") {
     return (
       <Menu>
-        <h1 className="mb-2 font-mono text-2xl text-green-100 absolute z-0">
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
-          DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE{" "}
-          <br />
+        <h1 className="mb-2 font-mono text-2xl text-green-100  z-0 animate-shake fixed overflow-hidden text-center">
+          {dontLie}
+          <br /> {dontLie} <br /> {dontLie} <br /> {dontLie} <br /> {dontLie}
+          <br /> {dontLie} <br /> {dontLie} <br /> {dontLie} <br /> {dontLie}
+          <br /> {dontLie} <br /> {dontLie}
+          <br /> {dontLie} <br /> {dontLie} <br /> {dontLie} <br /> {dontLie}
+          <br /> {dontLie} <br /> {dontLie} <br /> {dontLie} <br /> {dontLie}
+          <br /> {dontLie} <br /> {dontLie}
+          <br /> {dontLie} <br /> {dontLie} <br /> {dontLie}
+          <br /> {dontLie} <br /> {dontLie} <br /> {dontLie}
+          <br /> {dontLie} <br /> {dontLie}
         </h1>
         <h1 className="mb-2 font-mono text-2xl text-green-400 text-center z-10">
           REALLY?
         </h1>
         <div className="flex gap-12 mt-4 z-10">
-          <Button content="YES" onClick={() => setGamePanel("forth")} />
+          <Button
+            content={`YEAH, ${name}`}
+            onClick={() => setGamePanel("forth")}
+          />
           <Button content="NO" onClick={() => setGamePanel("second")} />
         </div>
       </Menu>

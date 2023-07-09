@@ -10,6 +10,7 @@ export function MainMenu(props) {
         onClick={() => props.setShownMenu(MENU_STATE.game)}
       />
       <Button
+        className="animate-fall"
         content="Options"
         onClick={() => props.setShownMenu(MENU_STATE.options)}
       />

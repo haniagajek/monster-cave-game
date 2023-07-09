@@ -22,3 +22,4 @@ export function Button(props) {
     </button>
   );
 }
+// mam dzwiek sound.wav ktory chce podlaczyc do klikania
