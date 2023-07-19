@@ -94,7 +94,10 @@ export function Game(props) {
             NEVERMIND
           </h1>
           <div className="flex mt-4 justify-center ">
-            <Button content="?" onClick={() => setGamePanel("fifth")} />
+            <Button
+              content="WHO ARE YOU?"
+              onClick={() => setGamePanel("fifth")}
+            />
           </div>
         </div>
       </Menu>
@@ -150,7 +153,85 @@ export function Game(props) {
             BUT YOU WERE INSIDE OF IT, WEREN'T YOU?
           </h1>
           <div className="flex mt-4 justify-center ">
-            <Button content="WHAT?" onClick={() => setGamePanel("six")} />
+            <Button content="WHAT?" onClick={() => setGamePanel("seven")} />
+          </div>
+        </div>
+      </Menu>
+    );
+  }
+  if (gamePanel === "seven") {
+    return (
+      <Menu>
+        <div>
+          {" "}
+          <h1 className="mb-2 font-mono text-2xl text-green-400 text-center  ">
+            OKAY BOY, I'M NO DOCTOR BUT <br />
+            IF YOU LOST YOUR MEMORY, MAYBE YOU SHOULD <br />
+            STAY WITH ME FOR A BIT, I HAVE A HUT BOUT 10 MINUTS FROM HERE,{" "}
+            <br />
+            UNLESS YOU WANNA GO BACK THERE <br />
+            IT'S OKAY IF YOU'RE SCARED, I DON'T BLAME YOU
+          </h1>
+          <div className="flex gap-12 mt-4">
+            <Button
+              content="I DON'T HAVE A CHOICE"
+              onClick={() => setGamePanel("eight")}
+            />
+            <Button
+              content="I'M SCARED"
+              onClick={() => setGamePanel("eight_second")}
+            />
+          </div>
+        </div>
+      </Menu>
+    );
+  }
+  if (gamePanel === "eight") {
+    return (
+      <Menu>
+        <div>
+          {" "}
+          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+            {" "}
+            *YOU WALK INTO THE CAVE*
+          </h1>
+          <div className="flex gap-12 mt-4">
+            <Button
+              content="I DON'T HAVE A CHOICE"
+              onClick={() => setGamePanel("eight")}
+            />
+            <Button
+              content="I'M SCARED"
+              onClick={() => setGamePanel("eight_second")}
+            />
+          </div>
+        </div>
+      </Menu>
+    );
+  }
+  if (gamePanel === "eight_second") {
+    return (
+      <Menu>
+        <div>
+          {" "}
+          <h1 className="mb-2 font-mono text-2xl text-green-400 text-center  ">
+            IT'S FINE, <br />
+            NOBODY HAVE DONE IT,
+            <br />
+            BUT I SAW YOU, COMING OUT OF THERE <br />
+            DIDN'T THINK THAT WAS POSSIBLE. <br />
+            YOU REMIND ME OF SOMEONE I USED TO KNOW <br />
+            I KNOW THAT YOU ARE NOT HIM BUT, <br />
+            I WANNTED TO GIVE YOU THIS
+            <br />
+            IT WILL PROTECT YOU, I BELIEVE
+            <br />
+          </h1>
+          <p className="mb-2 font-mono text-2xl text-blue-300  text-center">
+            *YOU RECIVED AN AMETHYST*{" "}
+          </p>
+          <div className="flex mt-4 justify-center">
+            <Button content="THANK YOU" onClick={() => setGamePanel("eight")} />
           </div>
         </div>
       </Menu>
