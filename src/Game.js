@@ -198,7 +198,7 @@ export function Game(props) {
           <div className="flex gap-12 mt-4">
             <Button
               content="I DON'T HAVE A CHOICE"
-              onClick={() => setGamePanel("eight")}
+              onClick={() => setGamePanel("nine")}
             />
             <Button
               content="I'M SCARED"
@@ -232,6 +232,34 @@ export function Game(props) {
           </p>
           <div className="flex mt-4 justify-center">
             <Button content="THANK YOU" onClick={() => setGamePanel("eight")} />
+          </div>
+        </div>
+      </Menu>
+    );
+  }
+  if (gamePanel === "nine") {
+    return (
+      <Menu>
+        <div>
+          {" "}
+          <h1 className="mb-2 font-mono text-2xl text-green-400 text-center  ">
+            IT'S NOT CLEAR HOW DEEP THIS CAVE IS, <br />
+            EVERY WALL LOOKS THE SAME AND THE LIGHT BEHIND YOU <br />
+            STARTED TO FAINT. <br />
+            BUT THE SOUND, YES THE SOUND BRINGS BACK YOUR MEMORIES <br />
+            YOU REALLY BEEN IN HERE ONE TIME. <br />
+            YOU NOTICED THAT THE PASSAGE IS SPLITED <br />
+            FROM THE LEFT YOU HEAR A WOMAN AND FROM THE RIGHT <br />
+            YOU HEAR RINGING, JUST LIKE TWO METAL PIECES ARE BANGING AGAINST{" "}
+            <br />
+            EACH OTHER, BUT THE SOUND IS DISTURBED <br />
+          </h1>
+          <div className="flex gap-12 mt-4">
+            <Button content="TURN LEFT" onClick={() => setGamePanel("nine")} />
+            <Button
+              content="TURN RIGHT"
+              onClick={() => setGamePanel("eight_second")}
+            />
           </div>
         </div>
       </Menu>
