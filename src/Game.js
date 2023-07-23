@@ -72,7 +72,7 @@ export function Game(props) {
         <h1 className="mb-2 font-mono text-2xl text-green-400 text-center z-10">
           REALLY?
         </h1>
-        <div className="flex gap-12 mt-4 z-10 animate-shake">
+        <div className="flex gap-12 mt-4 z-10 animate-shake justify-center">
           <Button
             content={`YEAH, ${name}`}
             onClick={() => setGamePanel("forth")}
@@ -110,11 +110,10 @@ export function Game(props) {
           {" "}
           <h1 className="mb-2 font-mono text-2xl text-green-400 text-center  ">
             {" "}
-            OH
-            <br /> RIGHT, I'M <br /> OZZY <br /> AND THIS IS <br /> BROXTON{" "}
-            <br /> THE TOWN VILLAGE, <br /> FOR A LONG TIME
-            <br /> I'VE BEEN A MINER <br /> BUT <br /> SOON AFTER, <br /> THE
-            TOWN STARTED TO BECOME
+            OH, RIGHT, I'M OZZY <br /> AND THIS IS BROXTON <br /> THE TOWN
+            VILLAGE, <br /> FOR A LONG TIME
+            <br /> I'VE BEEN A MINER <br /> BUT SOON AFTER, <br /> THE TOWN
+            STARTED TO BECOME
             <br /> ... <br /> SOMETHING THAT YOU CAN CALL
             <br /> "GHOST TOWN" <br /> IT'S BECOUSE OF THE CAVE <br /> YOU SEE,{" "}
             <br />
@@ -172,7 +171,7 @@ export function Game(props) {
             UNLESS YOU WANNA GO BACK THERE <br />
             IT'S OKAY IF YOU'RE SCARED, I DON'T BLAME YOU
           </h1>
-          <div className="flex gap-12 mt-4">
+          <div className="flex gap-12 mt-4 justify-center">
             <Button
               content="I DON'T HAVE A CHOICE"
               onClick={() => setGamePanel("eight")}
@@ -195,15 +194,8 @@ export function Game(props) {
             {" "}
             *YOU WALK INTO THE CAVE*
           </h1>
-          <div className="flex gap-12 mt-4">
-            <Button
-              content="I DON'T HAVE A CHOICE"
-              onClick={() => setGamePanel("nine")}
-            />
-            <Button
-              content="I'M SCARED"
-              onClick={() => setGamePanel("eight_second")}
-            />
+          <div className="flex mt-4 justify-center ">
+            <Button content=">" onClick={() => setGamePanel("nine")} />
           </div>
         </div>
       </Menu>
@@ -227,7 +219,7 @@ export function Game(props) {
             IT WILL PROTECT YOU, I BELIEVE
             <br />
           </h1>
-          <p className="mb-2 font-mono text-2xl text-blue-300  text-center">
+          <p className="mb-2 font-mono text-2xl text-blue-300  text-center animate-pulse ">
             *YOU RECIVED AN AMETHYST*{" "}
           </p>
           <div className="flex mt-4 justify-center">
@@ -242,7 +234,7 @@ export function Game(props) {
       <Menu>
         <div>
           {" "}
-          <h1 className="mb-2 font-mono text-2xl text-green-400 text-center  ">
+          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
             IT'S NOT CLEAR HOW DEEP THIS CAVE IS, <br />
             EVERY WALL LOOKS THE SAME AND THE LIGHT BEHIND YOU <br />
             STARTED TO FAINT. <br />
@@ -254,7 +246,7 @@ export function Game(props) {
             <br />
             EACH OTHER, BUT THE SOUND IS DISTURBED <br />
           </h1>
-          <div className="flex gap-12 mt-4">
+          <div className="flex gap-12 mt-4 justify-center ">
             <Button content="TURN LEFT" onClick={() => setGamePanel("nine")} />
             <Button
               content="TURN RIGHT"

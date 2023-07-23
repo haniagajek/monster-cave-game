@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       animation: {
         shake: "shake 0.1s ease-out .1s infinite alternate both",
+        fall: "fall 1.1s  ease-in-out both",
       },
       keyframes: {
         shake: {
@@ -14,15 +15,10 @@ module.exports = {
           "75%": { transform: "translate(2px, 3px)" },
           "100%": { transform: "translate(0, 0)" },
         },
-      },
-    },
-    animation: {
-      fall: "fall 1.1s  ease-in-out both",
-    },
-    keyframes: {
-      fall: {
-        "0%": { transform: "scale(5)" },
-        "100%": { transform: "scale(1)" },
+        fall: {
+          "0%": { transform: "scale(5)" },
+          "100%": { transform: "scale(1)" },
+        },
       },
     },
   },
