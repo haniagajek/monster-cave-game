@@ -4,6 +4,13 @@ import { useState } from "react";
 export function Game(props) {
   const [gamePanel, setGamePanel] = useState("first");
   const name = "";
+  //   const response_amethyst = "0"
+  //   const amethyst= "0";
+  // if (amethyst===0) {
+  //   return (response_amethyst = "THE ONE THAT OZZY GAVE YOU")
+  // } else {
+  //   return (response_amethyst = "SOMEONE MUST HAVE SLIPT IT IN YOUR POCKET WHEN YOU WEREN'T LOOKING")
+  // }
 
   const dontLie = `DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE 
   DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE DON'T LIE  DON'T LIE DON'T LIE DON'T LIE  DON'T LIE DON'T LIE DON'T LIE  DON'T LIE DON'T LIE DON'T LIE   DON'T LIE DON'T LIE DON'T LIE 
@@ -247,11 +254,196 @@ export function Game(props) {
             EACH OTHER, BUT THE SOUND IS DISTURBED <br />
           </h1>
           <div className="flex gap-12 mt-4 justify-center ">
-            <Button content="TURN LEFT" onClick={() => setGamePanel("nine")} />
+            <Button content="TURN LEFT" onClick={() => setGamePanel("ten")} />
             <Button
               content="TURN RIGHT"
-              onClick={() => setGamePanel("eight_second")}
+              onClick={() => setGamePanel("ten_second")}
             />
+          </div>
+        </div>
+      </Menu>
+    );
+  }
+  if (gamePanel === "nine") {
+    return (
+      <Menu>
+        <div>
+          {" "}
+          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+            IT'S NOT CLEAR HOW DEEP THIS CAVE IS, <br />
+            EVERY WALL LOOKS THE SAME AND THE LIGHT BEHIND YOU <br />
+            STARTED TO FAINT. <br />
+            BUT THE SOUND, YES THE SOUND BRINGS BACK YOUR MEMORIES <br />
+            YOU REALLY BEEN IN HERE ONE TIME. <br />
+            YOU NOTICED THAT THE PASSAGE IS SPLITED <br />
+            FROM THE LEFT YOU HEAR A WOMANS VOICE AND FROM THE RIGHT <br />
+            YOU HEAR RINGING, JUST LIKE TWO METAL PIECES ARE BANGING AGAINST{" "}
+            <br />
+            EACH OTHER, BUT THE SOUND IS DISTURBED <br />
+          </h1>
+          <div className="flex gap-12 mt-4 justify-center ">
+            <Button content="TURN LEFT" onClick={() => setGamePanel("ten")} />
+            <Button
+              content="TURN RIGHT"
+              onClick={() => setGamePanel("ten_second")}
+            />
+          </div>
+        </div>
+      </Menu>
+    );
+  }
+  if (gamePanel === "ten") {
+    return (
+      <Menu>
+        <div>
+          {" "}
+          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+            YOU NOTICED AN OLDER WOMAN, WEARING DESTROYED COAT, <br />
+            SHE IS TALKING, LOOKING INFRONT OF HER, BUT THERE IS NOT A THING
+            EXEPT A PILE OF ROCKS, <br />
+            YOU APROACH HER, SHE NOTICES YOU, TURNS YOUR WAY <br />
+          </h1>
+          <p className="mb-2 font-mono text-2xl text-green-400  text-center animate-pulse ">
+            OH IT'S YOU AGAIN, I'M SO HAPPY YOU CAME BACK, AS YOU PROMISED,{" "}
+            <br />
+            DO YOU HAVE THE THING?
+          </p>
+          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+            YOU PULL OUT AN AMETHYST OUT OF YOUR POCKET
+          </h1>
+          <div className="flex gap-12 mt-4 justify-center ">
+            <Button
+              content="GIVE HER THE AMETHYST"
+              onClick={() => setGamePanel("ten")}
+            />
+            <Button
+              content="KEEP IT TO YOURSELF"
+              onClick={() => setGamePanel("ten_second")}
+            />
+          </div>
+        </div>
+      </Menu>
+    );
+  }
+  if (gamePanel === "ten_second") {
+    return (
+      <Menu>
+        <div>
+          {" "}
+          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+            YOU FALL DOWN, TRIPING ON SOME KIND OF MATERIAL, IT'S TOO DARK FOR
+            YOU TO SEE <br />
+            SUDDENLY YOU HEAR A LOW VOICE,
+          </h1>
+          <p className="mb-2 font-mono text-2xl text-green-400  text-center  ">
+            STAND UP, WHO ARE YOU, ANOTHER KNIGHT? <br />
+          </p>
+          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+            PERSON INFRONT OF YOU LOOKS SMALL AND WEAK, BUT HAS A SWORD, <br />
+            YOU NOTICE THAT THERE IS AN ANVIL BEHIND THEM, MAYBE HAVING A SWORD,{" "}
+            <br />
+            WOUDN'T BE A BAD IDEA
+          </h1>
+          <div className="flex gap-12 mt-4 justify-center ">
+            <Button
+              content="KILL HIM"
+              onClick={() => setGamePanel("ten_third")}
+            />
+            <Button
+              content="NEGOTIATE"
+              onClick={() => setGamePanel("ten_fourth")}
+            />
+          </div>
+        </div>
+      </Menu>
+    );
+  }
+  if (gamePanel === "ten_third") {
+    return (
+      <Menu>
+        <div>
+          {" "}
+          <h1 className="mb-2 font-mono text-2xl text-red-500 text-center ">
+            YOU CHARGE AT HIM, HE TRIPS, EXPOSING THAT HE IS DWORF, THIS WILL BE
+            EASY THEN, <br />
+            YOU GRAB HIS SWORD THAT FALL NEXT TO YOU AND <br />
+            YOU CUT HIS HEAD OFF
+          </h1>
+          <p className="mb-2 font-mono text-2xl text-blue-300  text-center animate-pulse ">
+            *YOU RECIVED AN SWORD*{" "}
+          </p>
+          <div className="flex gap-12 mt-4 justify-center animate-shake ">
+            <Button
+              content="WALK AWAY"
+              onClick={() => setGamePanel("eleven_third")}
+            />
+          </div>
+        </div>
+      </Menu>
+    );
+  }
+  if (gamePanel === "ten_fourth") {
+    return (
+      <Menu>
+        <div>
+          {" "}
+          <p className="mb-2 font-mono text-2xl text-blue-300   text-center  ">
+            YOU GRAB YOUR POCKETS, IN THE SEARCH OF SOMETHING VALUABLE,
+            <br />
+            IN YOUR LAST POCKET IS SOMETHING QUITE SHARP, IT'S AMETHYST
+          </p>
+          <h1 className="mb-2 font-mono text-2xl text-green-400 text-center  ">
+            OH, AMETHYST, YOU CAME HERE TO TRADE?
+            <br />
+            THAT'S GOOD, I'M NOT AS STRONG AS I USED TO <br />
+            DURING THE LAST WAR MY HAD GOT CUT OFF, <br />
+            I WAS SCARED FOR A SECOND, I'M EGNAR BY THE WAY <br />
+            LET ME SEE THE CRYSTAL, <br />
+            I CAN OFFER YOU MY BEST SWORD, HERE YOU GO, <br />
+            NICE TALKING TO YOU, MY FRIEND, TAKE CARE <br />
+          </h1>
+          <p className="mb-2 font-mono text-2xl text-blue-300  text-center animate-pulse ">
+            *YOU RECIVED AN SWORD*{" "}
+          </p>
+          <div className="flex gap-12 mt-4 justify-center animate-shake ">
+            <Button
+              content="WALK AWAY"
+              onClick={() => setGamePanel("eleven_second")}
+            />
+          </div>
+        </div>
+      </Menu>
+    );
+  }
+  if (gamePanel === "eleven_first") {
+    return (
+      <Menu>
+        <div>
+          {" "}
+          <p className="mb-2 font-mono text-2xl text-green-400  text-center  ">
+            I'M SO HAPPY I'LL BE FINALLY ABLE TO COME BACK TO THE SURFICE, THANK
+            YOU {name}
+          </p>
+          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+            YOU WALK AWAY, IN THE SEARCH OF THE MEMORIES
+          </h1>
+          <div className="flex gap-12 mt-4 justify-center ">
+            <Button content=">" onClick={() => setGamePanel("twelwe")} />
+          </div>
+        </div>
+      </Menu>
+    );
+  }
+  if (gamePanel === "eleven_second") {
+    return (
+      <Menu>
+        <div>
+          {" "}
+          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+            YOU WALK AWAY, IN THE SEARCH OF THE MEMORIES
+          </h1>
+          <div className="flex gap-12 mt-4 justify-center ">
+            <Button content=">" onClick={() => setGamePanel("twelwe")} />
           </div>
         </div>
       </Menu>
