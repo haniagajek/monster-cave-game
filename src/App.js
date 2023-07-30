@@ -2,7 +2,7 @@ import { MainMenu } from "./MainMenu";
 import { OptionsMenu } from "./OptionsMenu";
 import { useState } from "react";
 import { MENU_STATE } from "./consts/menu";
-import { Game } from "./Game";
+import { Game2 } from "./Game2";
 
 function Content() {
   const [shownMenu, setShownMenu] = useState(MENU_STATE.main);
@@ -15,7 +15,7 @@ function Content() {
     return <OptionsMenu setShownMenu={setShownMenu} />;
   }
   if (shownMenu === MENU_STATE.game) {
-    return <Game setShownMenu={setShownMenu} />;
+    return <Game2 setShownMenu={setShownMenu} />;
   }
 }
 

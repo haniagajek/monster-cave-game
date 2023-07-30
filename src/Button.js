@@ -1,3 +1,5 @@
+import sound from "./sound.mp3";
+
 export function Button(props) {
   return (
     <button
@@ -16,10 +18,13 @@ export function Button(props) {
         hover:scale-105
         hover:bg-gray-900
         duration-300"
-      onClick={props.onClick}
+      onClick={() => {
+        const audio = new Audio(sound);
+        audio.play();
+        props.onClick();
+      }}
     >
       {props.content}
     </button>
   );
 }
-// mam dzwiek sound.wav ktory chce podlaczyc do klikania

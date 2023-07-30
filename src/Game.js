@@ -3,7 +3,9 @@ import { Button } from "./Button";
 import { useState } from "react";
 export function Game(props) {
   const [gamePanel, setGamePanel] = useState("1");
-  const name = "";
+  const [name, setName] = useState("");
+  const [eq, setEq] = useState("");
+
   //   const response_amethyst = "0"
   //   const amethyst= "0";
   // if (amethyst===0) {
@@ -18,7 +20,7 @@ export function Game(props) {
 
   const handleKeyDown = (event, name) => {
     if (event.key === "Enter") {
-      name = event.target.value;
+      setName(event.target.value);
       setGamePanel("3");
       console.log(name);
     }
@@ -249,31 +251,7 @@ export function Game(props) {
       </Menu>
     );
   }
-  if (gamePanel === "10") {
-    return (
-      <Menu>
-        <div>
-          {" "}
-          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
-            IT'S NOT CLEAR HOW DEEP THIS CAVE IS, <br />
-            EVERY WALL LOOKS THE SAME AND THE LIGHT BEHIND YOU <br />
-            STARTED TO FAINT. <br />
-            BUT THE SOUND, YES THE SOUND BRINGS BACK YOUR MEMORIES <br />
-            YOU REALLY BEEN IN HERE ONE TIME. <br />
-            YOU NOTICED THAT THE PASSAGE IS SPLITED <br />
-            FROM THE LEFT YOU HEAR A WOMANS VOICE AND FROM THE RIGHT <br />
-            YOU HEAR RINGING, JUST LIKE TWO METAL PIECES ARE BANGING AGAINST{" "}
-            <br />
-            EACH OTHER, BUT THE SOUND IS DISTURBED <br />
-          </h1>
-          <div className="flex gap-12 mt-4 justify-center ">
-            <Button content="TURN LEFT" onClick={() => setGamePanel("10")} />
-            <Button content="TURN RIGHT" onClick={() => setGamePanel("10.2")} />
-          </div>
-        </div>
-      </Menu>
-    );
-  }
+
   if (gamePanel === "10") {
     return (
       <Menu>
@@ -300,7 +278,8 @@ export function Game(props) {
             />
             <Button
               content="KEEP IT TO YOURSELF"
-              onClick={() => setGamePanel("11.3")}
+              onClick={() => setGamePanel("11.2")}
+              // loo
             />
           </div>
         </div>
@@ -471,8 +450,8 @@ export function Game(props) {
             YOU CHARGE AT THEM, KILLING THEM ALL, HIGH VOICE APPROACHES YOU
           </h1>
           <h1 className="mb-2 font-mono text-2xl text-green-400 text-center  ">
-            THANK YOU, I DON'T KNOW WHAT I WOULD DO WITHOUT YOUR HELP, <br />
-            I THOUGHT THAT WE WERE GOING TO DIE, I SAW MULTIPLE KNIGHTS JUST,{" "}
+            THANK YOU, I DON'T KNOW WHAT I WOULD DO WITHOUT YOUR HELP, <br />I
+            THOUGHT THAT WE WERE GOING TO DIE, I SAW MULTIPLE KNIGHTS JUST,{" "}
             <br />
             SNEAKING OUT WHEN THEY SAW GOBLINS, THANK YOU <br />
             FOR BEING A REAL HERO, WE WILL BE FINE ON OUR OWN NOW, <br />I HOPE
