@@ -4,10 +4,9 @@ import { useState } from "react";
 import { DialogueSequencer } from "./DialogueSequencer";
 import { ALL_DIALOGUES } from "./consts/dialogues";
 
-export function Game2(props) {
+export function Game2() {
   const [gamePanel, setGamePanel] = useState("A1");
-  const [name, setName] = useState("");
-  const [eq, setEq] = useState("");
+  const [playerAnswers, setPlayerAnswers] = useState({});
 
   const currentDialogue = ALL_DIALOGUES.find(
     (dialogue) => dialogue.id === gamePanel
@@ -17,6 +16,8 @@ export function Game2(props) {
     <DialogueSequencer
       dialogue={currentDialogue}
       handleRedirect={setGamePanel}
+      playerAnswers={playerAnswers}
+      setPlayerAnswers={setPlayerAnswers}
     />
   );
 }
