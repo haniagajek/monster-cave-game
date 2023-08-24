@@ -367,121 +367,121 @@ export function Game(props) {
   //   );
   // }
 
-  if (gamePanel === "11") {
-    return (
-      <Menu>
-        <div>
-          {" "}
-          <h1 className="mb-2 font-mono text-2xl text-green-400 text-center  ">
-            HERE, TAKE THIS, AS A THANK YOU
-          </h1>{" "}
-          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  animate-pulse">
-            *YOU RECIVED A KNIFE*
-          </h1>
-          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
-            YOU WALK AWAY, IN THE SEARCH OF THE MEMORIES
-          </h1>
-          <div className="flex gap-12 mt-4 justify-center ">
-            <Button content=">" onClick={() => setGamePanel("12")} />
-          </div>
-        </div>
-      </Menu>
-    );
-  }
-  if (gamePanel === "11.2") {
-    return (
-      <Menu>
-        <div>
-          {" "}
-          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
-            YOU WALK AWAY, IN THE SEARCH OF THE MEMORIES
-          </h1>
-          <div className="flex gap-12 mt-4 justify-center ">
-            <Button content=">" onClick={() => setGamePanel("12")} />
-          </div>
-        </div>
-      </Menu>
-    );
-  }
-  if (gamePanel === "11.3") {
-    return (
-      <Menu>
-        <div>
-          {" "}
-          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
-            YOU WALK AWAY, IN SEARCH OF THE STONE,
-            <br />
-            BUT WAIT, YOU DON'T THINK THAT YOU SHOULD RECONCIDER?
-          </h1>
-          <div className="flex gap-12 mt-4 justify-center ">
-            <Button content="NO" onClick={() => setGamePanel("12")} />
-            <Button content="YES" onClick={() => setGamePanel("9")} />
-          </div>
-        </div>
-      </Menu>
-    );
-  }
-  if (gamePanel === "12") {
-    return (
-      <Menu>
-        <div>
-          {" "}
-          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
-            YOU SUDDENLY HEAR MULTIPLE PEOPLE SCREAMING, YOU RUN TOWARDS THE
-            SOUND
-            <br /> YOU SEE FIVE MAYBE SIX WOMAN COVERED IN BLOOD, <br />
-            NEXT TO THEM ARE GOBLINS, YOU KNOW HOW CRUEL THEY ARE, <br />
-            YOU GET READY TO FIGHT, BUT WAIT, THEY DID'T NOTICED YOU <br />
-            MAYBE YOU COULD SNEAK NEXT TO THEM?
-          </h1>
-          <div className="flex gap-12 mt-4 justify-center ">
-            <Button content="FIGHT" onClick={() => setGamePanel("13")} />
-            {/* można kliknąc fight tylko jak sie ma broń idk jak to zrobić bby */}
-            <Button content="SNEAK OUT" onClick={() => setGamePanel("13.2")} />
-          </div>
-        </div>
-      </Menu>
-    );
-  }
-  if (gamePanel === "13") {
-    return (
-      <Menu>
-        <div>
-          {" "}
-          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
-            YOU CHARGE AT THEM, KILLING THEM ALL, HIGH VOICE APPROACHES YOU
-          </h1>
-          <h1 className="mb-2 font-mono text-2xl text-green-400 text-center  ">
-            THANK YOU, I DON'T KNOW WHAT I WOULD DO WITHOUT YOUR HELP, <br />I
-            THOUGHT THAT WE WERE GOING TO DIE, I SAW MULTIPLE KNIGHTS JUST,{" "}
-            <br />
-            SNEAKING OUT WHEN THEY SAW GOBLINS, THANK YOU <br />
-            FOR BEING A REAL HERO, WE WILL BE FINE ON OUR OWN NOW, <br />I HOPE
-            YOU FIND WHAT YOU WERE LOOKING FOR
-          </h1>{" "}
-          <div className="flex gap-12 mt-4 justify-center ">
-            <Button content="WALK AWAY" onClick={() => setGamePanel("14")} />
-          </div>
-        </div>
-      </Menu>
-    );
-  }
-  if (gamePanel === "13.2") {
-    return (
-      <Menu>
-        <div>
-          {" "}
-          <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
-            YOU MANAGED TO WALK PAST THEM
-          </h1>
-          <div className="flex gap-12 mt-4 justify-center ">
-            <Button content=">" onClick={() => setGamePanel("14")} />
-          </div>
-        </div>
-      </Menu>
-    );
-  }
-}
+  // if (gamePanel === "11") {
+  //   return (
+  //     <Menu>
+  //       <div>
+  //         {" "}
+  //         <h1 className="mb-2 font-mono text-2xl text-green-400 text-center  ">
+  //           HERE, TAKE THIS, AS A THANK YOU
+  //         </h1>{" "}
+  //         <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  animate-pulse">
+  //           *YOU RECIVED A KNIFE*
+  //         </h1>
+  //         <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+  //           YOU WALK AWAY, IN THE SEARCH OF THE MEMORIES
+  //         </h1>
+  //         <div className="flex gap-12 mt-4 justify-center ">
+  //           <Button content=">" onClick={() => setGamePanel("12")} />
+  //         </div>
+  //       </div>
+  //     </Menu>
+  //   );
+  // }
+  // if (gamePanel === "11.2") {
+  //   return (
+  //     <Menu>
+  //       <div>
+  //         {" "}
+  //         <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+  //           YOU WALK AWAY, IN THE SEARCH OF THE MEMORIES
+  //         </h1>
+  //         <div className="flex gap-12 mt-4 justify-center ">
+  //           <Button content=">" onClick={() => setGamePanel("12")} />
+  //         </div>
+  //       </div>
+  //     </Menu>
+  //   );
+  // }
+  // if (gamePanel === "11.3") {
+  //   return (
+  //     <Menu>
+  //       <div>
+  //         {" "}
+  //         <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+  //           YOU WALK AWAY, IN SEARCH OF THE STONE,
+  //           <br />
+  //           BUT WAIT, YOU DON'T THINK THAT YOU SHOULD RECONCIDER?
+  //         </h1>
+  //         <div className="flex gap-12 mt-4 justify-center ">
+  //           <Button content="NO" onClick={() => setGamePanel("12")} />
+  //           <Button content="YES" onClick={() => setGamePanel("9")} />
+  //         </div>
+  //       </div>
+  //     </Menu>
+  //   );
+  // }
+  // if (gamePanel === "12") {
+  //   return (
+  //     <Menu>
+  //       <div>
+  //         {" "}
+  //         <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+  //           YOU SUDDENLY HEAR MULTIPLE PEOPLE SCREAMING, YOU RUN TOWARDS THE
+  //           SOUND
+  //           <br /> YOU SEE FIVE MAYBE SIX WOMAN COVERED IN BLOOD, <br />
+  //           NEXT TO THEM ARE GOBLINS, YOU KNOW HOW CRUEL THEY ARE, <br />
+  //           YOU GET READY TO FIGHT, BUT WAIT, THEY DID'T NOTICED YOU <br />
+  //           MAYBE YOU COULD SNEAK NEXT TO THEM?
+  //         </h1>
+  //         <div className="flex gap-12 mt-4 justify-center ">
+  //           <Button content="FIGHT" onClick={() => setGamePanel("13")} />
+  //           {/* można kliknąc fight tylko jak sie ma broń idk jak to zrobić bby */}
+  //           <Button content="SNEAK OUT" onClick={() => setGamePanel("13.2")} />
+  //         </div>
+  //       </div>
+  //     </Menu>
+  //   );
+  // }
+//   if (gamePanel === "13") {
+//     return (
+//       <Menu>
+//         <div>
+//           {" "}
+//           <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+//             YOU CHARGE AT THEM, KILLING THEM ALL, HIGH VOICE APPROACHES YOU
+//           </h1>
+//           <h1 className="mb-2 font-mono text-2xl text-green-400 text-center  ">
+//             THANK YOU, I DON'T KNOW WHAT I WOULD DO WITHOUT YOUR HELP, <br />I
+//             THOUGHT THAT WE WERE GOING TO DIE, I SAW MULTIPLE KNIGHTS JUST,{" "}
+//             <br />
+//             SNEAKING OUT WHEN THEY SAW GOBLINS, THANK YOU <br />
+//             FOR BEING A REAL HERO, WE WILL BE FINE ON OUR OWN NOW, <br />I HOPE
+//             YOU FIND WHAT YOU WERE LOOKING FOR
+//           </h1>{" "}
+//           <div className="flex gap-12 mt-4 justify-center ">
+//             <Button content="WALK AWAY" onClick={() => setGamePanel("14")} />
+//           </div>
+//         </div>
+//       </Menu>
+//     );
+//   }
+//   if (gamePanel === "13.2") {
+//     return (
+//       <Menu>
+//         <div>
+//           {" "}
+//           <h1 className="mb-2 font-mono text-2xl text-blue-300 text-center  ">
+//             YOU MANAGED TO WALK PAST THEM
+//           </h1>
+//           <div className="flex gap-12 mt-4 justify-center ">
+//             <Button content=">" onClick={() => setGamePanel("14")} />
+//           </div>
+//         </div>
+//       </Menu>
+//     );
+//   }
+// }
 
 // function Content() {
 //     const [shownMenu, setShownMenu] = useState(MENU_STATE.main);

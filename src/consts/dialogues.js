@@ -88,9 +88,9 @@ export const DIALOGUE_5 = {
       <br /> I'VE BEEN A MINER <br /> BUT SOON AFTER, <br /> THE TOWN
       STARTED TO BECOME
       <br /> ... <br /> SOMETHING THAT YOU CAN CALL
-      <br /> "GHOST TOWN" <br /> IT'S BECOUSE OF THE CAVE <br /> YOU SEE,{" "}
+      <br /> "GHOST TOWN" <br /> IT'S BECOUSE OF THE CAVE <br /> YOU SEE,
       <br />
-      I'M NO LONGER A MINER{" "}`,
+      I'M NO LONGER A MINER`,
     },
   ],
   answers: [
@@ -115,7 +115,7 @@ export const DIALOGUE_6 = {
       THE ONE THAT COULD GRAND YOU ONE WISH <br />
       WHATEVER YOUR MIND DESIRES, MOST OF THEM DIDN'T BELIVE <br />
       BUT SOME PEOPLE, REALLY WENT LOOKIN, THEY CAME ACROSS <br />
-      THE OLDEST CAVE IN TOWN, A TON OF PEOPLE DECIDED TO LOOK THERE,{" "}
+      THE OLDEST CAVE IN TOWN, A TON OF PEOPLE DECIDED TO LOOK THERE,
       <br />
       I DON'T RECON I EVER HEARD ABOUT SOMEONE THAT CAME OUT <br />
       ... <br />
@@ -137,7 +137,7 @@ export const DIALOGUE_7 = {
     {
       text: ` OKAY BOY, I'M NO SCHOLAR BUT <br />
       IF YOU LOST YOUR MEMORY, MAYBE YOU SHOULD <br />
-      STAY WITH ME FOR A BIT, I HAVE A HUT BOUT 10 MINUTS FROM HERE,{" "}
+      STAY WITH ME FOR A BIT, I HAVE A HUT BOUT 10 MINUTS FROM HERE,
       <br />
       UNLESS YOU WANNA GO BACK THERE <br />
       I DON'T KNOW HOW WAS THAT FELLOW TO YOU. <br />
@@ -212,10 +212,10 @@ export const DIALOGUE_10 = {
       YOU REALLY BEEN IN HERE ONE TIME. <br />
       YOU NOTICED THAT THE PASSAGE IS SPLITED <br />
       FROM THE LEFT YOU HEAR A WOMAN AND FROM THE RIGHT <br />
-      YOU HEAR RINGING, JUST LIKE TWO METAL PIECES ARE BANGING AGAINST{" "}
+      YOU HEAR RINGING, JUST LIKE TWO METAL PIECES ARE BANGING AGAINST
       <br />
       EACH OTHER, BUT THE SOUND IS DISTURBED <br />`,
-      classes: "text-blue-300 ",
+      classes: `text-blue-300`,
     },
   ],
   answers: [
@@ -349,4 +349,144 @@ export const DIALOGUE_14 = {
     },
   ],
 };
-export const ALL_DIALOGUES = [DIALOGUE_1, DIALOGUE_2, DIALOGUE_3];
+
+export const DIALOGUE_15 = {
+  id: "K1",
+  content: [
+    {
+      text: `HERE, TAKE THIS, AS A THANK YOU`,
+    },
+    {
+      text: `*YOU RECIVED A KNIFE*`,
+      classes: `text-blue-300 animate-pulse`,
+    },
+    {
+      text: `YOU WALK AWAY, IN THE SEARCH OF THE MEMORIES`,
+    },
+  ],
+  answers: [
+    {
+      content: ">",
+      redirect: "L1",
+    },
+  ],
+};
+
+export const DIALOGUE_16 = {
+  id: "K2",
+  content: [
+    {
+      text: `YOU WALK AWAY, IN THE SEARCH OF THE MEMORIES`,
+      classes: `text-blue-300 animate-pulse`,
+    },
+  ],
+  answers: [
+    {
+      content: ">",
+      redirect: "L1",
+    },
+  ],
+};
+
+export const DIALOGUE_17 = {
+  id: "K3",
+  content: [
+    {
+      text: `  YOU WALK AWAY, IN SEARCH OF THE STONE,
+      <br />
+      BUT WAIT, YOU DON'T THINK THAT YOU SHOULD RECONCIDER?`,
+      classes: `text-blue-300 animate-pulse`,
+    },
+  ],
+  answers: [
+    {
+      content: "NO",
+      redirect: "L1",
+    },
+    {
+      content: "YES",
+      redirect: "I1",
+    },
+  ],
+};
+
+export const DIALOGUE_18 = {
+  id: "L1",
+  content: [
+    {
+      text: `YOU SUDDENLY HEAR MULTIPLE PEOPLE SCREAMING, YOU RUN TOWARDS THE
+      SOUND
+      <br /> YOU SEE FIVE MAYBE SIX WOMAN COVERED IN BLOOD, <br />
+      NEXT TO THEM ARE GOBLINS, YOU KNOW HOW CRUEL THEY ARE, <br />
+      YOU GET READY TO FIGHT, BUT WAIT, THEY DID'T NOTICED YOU <br />
+      MAYBE YOU COULD SNEAK NEXT TO THEM?`,
+      classes: `text-blue-300 `,
+    },
+  ],
+  answers: [
+    {
+      content: "FIGHT",
+      redirect: "M1",
+    },
+    {
+      content: "SNEAK AROUND",
+      redirect: "M2",
+    },
+  ],
+};
+
+export const DIALOGUE_19 = {
+  id: "M1",
+  content: [
+    {
+      text: ` YOU CHARGE AT THEM, KILLING THEM ALL, HIGH VOICE APPROACHES YOU`,
+      classes: `text-blue-300 `,
+    },
+    {
+      text: `THANK YOU, I DON'T KNOW WHAT I WOULD DO WITHOUT YOUR HELP, <br />I
+      THOUGHT THAT WE WERE GOING TO DIE, I SAW MULTIPLE KNIGHTS JUST,{" "}
+      <br />
+      SNEAKING OUT WHEN THEY SAW GOBLINS, THANK YOU <br />
+      FOR BEING A REAL HERO, WE WILL BE FINE ON OUR OWN NOW, <br />I HOPE
+      YOU FIND WHAT YOU WERE LOOKING FOR`,
+    },
+  ],
+  answers: [
+    {
+      content: "WALK AWAY",
+      redirect: "N1",
+    },
+  ],
+};
+
+export const DIALOGUE_20 = {
+  id: "M2",
+  content: [
+    {
+      text: ` YOU MANAGED TO WALK PAST THEM`,
+      classes: `text-blue-300 `,
+    },
+  ],
+  answers: [
+    {
+      content: ">",
+      redirect: "N1",
+    },
+  ],
+};
+export const ALL_DIALOGUES = [
+  DIALOGUE_1,
+  DIALOGUE_2,
+  DIALOGUE_3,
+  DIALOGUE_4,
+  DIALOGUE_5,
+  DIALOGUE_6,
+  DIALOGUE_7,
+  DIALOGUE_8,
+  DIALOGUE_9,
+  DIALOGUE_10,
+  DIALOGUE_11,
+  DIALOGUE_12,
+  DIALOGUE_13,
+  DIALOGUE_14,
+];
