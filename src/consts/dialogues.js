@@ -66,9 +66,9 @@ export const DIALOGUE_4 = {
     {
       text: `#NAME# <br />
       ...
-      <br /> THAT REMINDS ME OF,
+      <br /> YOU LOOK LIKE SOMEONE I ONCE KNEW,
       <br />
-      NEVERMIND`,
+      SUCH A WEIRD COINCIDENCE`,
     },
   ],
   answers: [
@@ -244,7 +244,7 @@ export const DIALOGUE_11 = {
       text: `OH IT'S YOU AGAIN, I'M SO HAPPY YOU CAME BACK, AS YOU PROMISED,{" "}
       <br />
       DO YOU HAVE THE THING?`,
-      classes: "animate-pulse ",
+      classes: `text-orange-300 `,
     },
     {
       text: `YOU PULL OUT AN AMETHYST OUT OF YOUR POCKET`,
@@ -274,6 +274,7 @@ export const DIALOGUE_12 = {
     },
     {
       text: `STAND UP, WHO ARE YOU, ANOTHER KNIGHT?`,
+      classes: `text-brown-300 `,
     },
     {
       text: `PERSON INFRONT OF YOU LOOKS SMALL AND WEAK, BUT HAS A SWORD, <br />
@@ -336,6 +337,7 @@ export const DIALOGUE_14 = {
       LET ME SEE THE CRYSTAL, <br />
       I CAN OFFER YOU MY BEST SWORD, HERE YOU GO, <br />
       NICE TALKING TO YOU, MY FRIEND, TAKE CARE <br />`,
+      classes: `text-brown-300 `,
     },
     {
       text: `*YOU RECIVED AN SWORD*`,
@@ -355,6 +357,7 @@ export const DIALOGUE_15 = {
   content: [
     {
       text: `HERE, TAKE THIS, AS A THANK YOU`,
+      classes: `text-orange-300 `,
     },
     {
       text: `*YOU RECIVED A KNIFE*`,
@@ -362,6 +365,7 @@ export const DIALOGUE_15 = {
     },
     {
       text: `YOU WALK AWAY, IN THE SEARCH OF THE MEMORIES`,
+      classes: `text-orange-300 `,
     },
   ],
   answers: [
@@ -449,6 +453,7 @@ export const DIALOGUE_19 = {
       SNEAKING OUT WHEN THEY SAW GOBLINS, THANK YOU <br />
       FOR BEING A REAL HERO, WE WILL BE FINE ON OUR OWN NOW, <br />I HOPE
       YOU FIND WHAT YOU WERE LOOKING FOR`,
+      classes: `text-pink-300 `,
     },
   ],
   answers: [
@@ -474,6 +479,115 @@ export const DIALOGUE_20 = {
     },
   ],
 };
+
+export const DIALOGUE_21 = {
+  id: "N1",
+  content: [
+    {
+      text: `THE SOUND THAT WAS ECHOING IN THE HALLS SUDDENLY STOPED </br> IN THE DARKNES YOU NOTICED QUITE A SMALL PERSON PEERING AT YOU </br> HE SCREAMD AT THE TOP OF HIS LUNGS`,
+      classes: `text-blue-300 `,
+    },
+    {
+      text: `#NAME#`,
+      classes: `text-green-300 `,
+    },
+    {
+      text: `IT TOOK YOU A SECOND BUT EVENTUALLY YOU SHOUT BACK`,
+      classes: `text-blue-300 `,
+    },
+  ],
+  answers: [
+    {
+      content: "THEO!",
+      redirect: "O1",
+    },
+  ],
+};
+
+export const DIALOGUE_22 = {
+  id: "O1",
+  content: [
+    {
+      text: `IT DOES NOT TAKE LONG FOR YOU TO RUN TOWARDS, </br> YOUR BLURRY VISION COUSED BY TEARS IN YOUR EYES DOES NOT HELP HIDE THE TRUTH`,
+      classes: `text-blue-300 `,
+    },
+    {
+      text: `THEO, WHY DO YOU LOOK LIKE THIS?`,
+      classes: `text-gray-300 `,
+    },
+    {
+      text: `WHAT? #NAME#?`,
+      classes: `text-green-300 `,
+    },
+    {
+      text: `YOU REMEMBER, YOU REMEMBER EVERYTHING`,
+      classes: `text-blue-300 animate-shake  `,
+    },
+  ],
+  answers: [
+    {
+      content: "I HAVE TO FIND THE STONE",
+      redirect: "O1",
+    },
+  ],
+};
+
+export const DIALOGUE_23 = {
+  id: "P1",
+  content: [
+    {
+      text: `YOU RUN TO THE HEART OF THE CAVE, IGNORING THEO SHOUTING AT YOU </br> YOU REMEMBER, YOU REMEMBER THAT IT IS ALL YOUR FAULT </br> YOU MADE IT TO THE END, </br> THERE IS NO MAGIC STONE HERE, </br> YOU FALL TO YOUR KNEES, CRYING HARDER THAN YOU THOUGHT YOU COULD `,
+      classes: `text-blue-300 `,
+    },
+    {
+      text: `WHY ARE YOU CRYING?`,
+      classes: `text-orange-300 `,
+    },
+    {
+      text: `IT'S ALL MY FAULT, THEO FOR FUCKS SAKE, I MADE HIM LIKE THIS, </br> HE WAS LIKE A BROTHER TO ME AND NOW I CAN'T FIX IT </br> NO MATTER HOW HARD I TRY`,
+      classes: `text-gray-300 `,
+    },
+    {
+      text: `#NAME# THE FIRST TIME YOU GOT HERE  </br> I HONESTLY DID'T THINK THAT REMOVING YOUR MEMORY WOULD DO SOMETHING </br> I'M SO GLAD THAT I WAS WRONG`,
+      classes: `text-orange-300 `,
+    },
+    {
+      text: `WHAT? WHO ARE YOU? I CAN'T SEE ANYTHING`,
+      classes: `text-gray-300 `,
+    },
+    {
+      text: "*YOU RECIVED A GLOWING STONE*",
+      classes: "text-blue-300 animate-pulse",
+    },
+  ],
+  answers: [
+    {
+      content: "FIX WHAT YOU HAVE DONE",
+      redirect: "R1",
+    },
+  ],
+};
+
+export const DIALOGUE_24 = {
+  id: "R1",
+  content: [
+    {
+      text: `YOU WAKE UP AT THE ENTERENCE OF THE CAVE,</br> FROM FAR AWAY YOU NOTICES OZZY RUNNING TOWARDS YOU,</br> ACTUALLY RUNNING NEXT TO YOU?  `,
+      classes: `text-blue-300 `,
+    },
+    {
+      text: `OH MY THEO, I THOUGHT I LOST YOU`,
+    },
+    {
+      text: `DAD`,
+      classes: `text-green-300 `,
+    },
+    {
+      text: `YOU REALIZED THAT SWICHING BODIES </br> ONCE AGAIN WAS REALLY WORTH THE VIEW `,
+      classes: `text-blue-300 `,
+    },
+  ],
+};
 export const ALL_DIALOGUES = [
   DIALOGUE_1,
   DIALOGUE_2,
@@ -489,4 +603,14 @@ export const ALL_DIALOGUES = [
   DIALOGUE_12,
   DIALOGUE_13,
   DIALOGUE_14,
+  DIALOGUE_15,
+  DIALOGUE_16,
+  DIALOGUE_17,
+  DIALOGUE_18,
+  DIALOGUE_19,
+  DIALOGUE_20,
+  DIALOGUE_21,
+  DIALOGUE_22,
+  DIALOGUE_23,
+  DIALOGUE_24,
 ];
