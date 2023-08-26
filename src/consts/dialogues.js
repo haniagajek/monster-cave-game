@@ -161,7 +161,7 @@ export const DIALOGUE_8 = {
   content: [
     {
       text: `YOU WALK INTO THE CAVE`,
-      classes: "text-blue-300 ",
+      classes: `text-blue-300 `,
     },
   ],
   answers: [
@@ -190,7 +190,7 @@ export const DIALOGUE_9 = {
     },
     {
       text: "*YOU RECIVED AN AMETHYST*",
-      classes: "text-blue-300 animate-pulse",
+      classes: `text-blue-300 animate-pulse`,
     },
   ],
   answers: [
@@ -238,7 +238,7 @@ export const DIALOGUE_11 = {
       SHE IS TALKING, LOOKING INFRONT OF HER, BUT THERE IS NOT A THING
       EXEPT A PILE OF ROCKS, <br />
       YOU APROACH HER, SHE NOTICES YOU, TURNS YOUR WAY <br />`,
-      classes: "text-blue-300 ",
+      classes: `text-blue-300 `,
     },
     {
       text: `OH IT'S YOU AGAIN, I'M SO HAPPY YOU CAME BACK, AS YOU PROMISED,{" "}
@@ -248,7 +248,7 @@ export const DIALOGUE_11 = {
     },
     {
       text: `YOU PULL OUT AN AMETHYST OUT OF YOUR POCKET`,
-      classes: "text-blue-300",
+      classes: `text-blue-300`,
     },
   ],
   answers: [
@@ -270,7 +270,7 @@ export const DIALOGUE_12 = {
       text: `YOU FALL DOWN, TRIPING ON SOME KIND OF MATERIAL, IT'S TOO DARK FOR
       YOU TO SEE <br />
       SUDDENLY YOU HEAR A LOW VOICE,`,
-      classes: "text-blue-300 ",
+      classes: `text-blue-300 `,
     },
     {
       text: `STAND UP, WHO ARE YOU, ANOTHER KNIGHT?`,
@@ -281,7 +281,7 @@ export const DIALOGUE_12 = {
       YOU NOTICE THAT THERE IS AN ANVIL BEHIND THEM, MAYBE HAVING A SWORD,
       <br />
       WOUDN'T BE A BAD IDEA`,
-      classes: "text-blue-300",
+      classes: `text-blue-300`,
     },
   ],
   answers: [
@@ -304,11 +304,11 @@ export const DIALOGUE_13 = {
       EASY THEN, <br />
       YOU GRAB HIS SWORD THAT FALL NEXT TO YOU AND <br />
       YOU CUT HIS HEAD OFF`,
-      classes: "text-red-500 ",
+      classes: `text-red-500 `,
     },
     {
       text: ` *YOU RECIVED AN SWORD*`,
-      classes: "text-blue-300 animate-pulse",
+      classes: `text-blue-300 animate-pulse`,
     },
   ],
   answers: [
@@ -326,7 +326,7 @@ export const DIALOGUE_14 = {
       text: `YOU GRAB YOUR POCKETS, IN THE SEARCH OF SOMETHING VALUABLE,
       <br />
       IN YOUR LAST POCKET IS SOMETHING QUITE SHARP, IT'S AMETHYST`,
-      classes: "text-blue-300 ",
+      classes: `text-blue-300 `,
     },
     {
       text: `  OH, AMETHYST, YOU CAME HERE TO TRADE?
@@ -341,7 +341,7 @@ export const DIALOGUE_14 = {
     },
     {
       text: `*YOU RECIVED AN SWORD*`,
-      classes: "text-blue-300 animate-pulse",
+      classes: `text-blue-300 animate-pulse`,
     },
   ],
   answers: [
@@ -527,7 +527,7 @@ export const DIALOGUE_22 = {
   answers: [
     {
       content: "I HAVE TO FIND THE STONE",
-      redirect: "O1",
+      redirect: "P1",
     },
   ],
 };
@@ -536,7 +536,7 @@ export const DIALOGUE_23 = {
   id: "P1",
   content: [
     {
-      text: `YOU RUN TO THE HEART OF THE CAVE, IGNORING THEO SHOUTING AT YOU </br> YOU REMEMBER, YOU REMEMBER THAT IT IS ALL YOUR FAULT </br> YOU MADE IT TO THE END, </br> THERE IS NO MAGIC STONE HERE, </br> YOU FALL TO YOUR KNEES, CRYING HARDER THAN YOU THOUGHT YOU COULD `,
+      text: `YOU RUN TO THE HEART OF THE CAVE, IGNORING THEO SHOUTING AT YOU </br>IT IS ALL YOUR FAULT </br> YOU MADE IT TO THE END, </br> THERE IS NO MAGIC STONE HERE, </br> YOU FALL TO YOUR KNEES, CRYING HARDER THAN YOU THOUGHT YOU COULD `,
       classes: `text-blue-300 `,
     },
     {
@@ -547,6 +547,17 @@ export const DIALOGUE_23 = {
       text: `IT'S ALL MY FAULT, THEO FOR FUCKS SAKE, I MADE HIM LIKE THIS, </br> HE WAS LIKE A BROTHER TO ME AND NOW I CAN'T FIX IT </br> NO MATTER HOW HARD I TRY`,
       classes: `text-gray-300 `,
     },
+  ],
+  answers: [
+    {
+      content: ">",
+      redirect: "P2",
+    },
+  ],
+};
+export const DIALOGUE_24 = {
+  id: "P2",
+  content: [
     {
       text: `#NAME# THE FIRST TIME YOU GOT HERE  </br> I HONESTLY DID'T THINK THAT REMOVING YOUR MEMORY WOULD DO SOMETHING </br> I'M SO GLAD THAT I WAS WRONG`,
       classes: `text-orange-300 `,
@@ -563,13 +574,13 @@ export const DIALOGUE_23 = {
   answers: [
     {
       content: "FIX WHAT YOU HAVE DONE",
-      redirect: "R1",
+      redirect: "R2",
     },
   ],
 };
 
-export const DIALOGUE_24 = {
-  id: "R1",
+export const DIALOGUE_25 = {
+  id: "R2",
   content: [
     {
       text: `YOU WAKE UP AT THE ENTERENCE OF THE CAVE,</br> FROM FAR AWAY YOU NOTICES OZZY RUNNING TOWARDS YOU,</br> ACTUALLY RUNNING NEXT TO YOU?  `,
@@ -583,7 +594,7 @@ export const DIALOGUE_24 = {
       classes: `text-green-300 `,
     },
     {
-      text: `YOU REALIZED THAT SWICHING BODIES </br> ONCE AGAIN WAS REALLY WORTH THE VIEW `,
+      text: `YOU REALIZED THAT SWICHING BODIES </br> ONCE AGAIN WAS REALLY WORTH IT`,
       classes: `text-blue-300 `,
     },
   ],
@@ -613,4 +624,5 @@ export const ALL_DIALOGUES = [
   DIALOGUE_22,
   DIALOGUE_23,
   DIALOGUE_24,
+  DIALOGUE_25,
 ];

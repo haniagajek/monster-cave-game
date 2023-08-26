@@ -5,7 +5,7 @@ export function Button(props) {
     <button
       className="
         min-w-[128px]
-        max-w-[350px]
+        max-w-[360px]
         w-2/4
         py-3
         px-12

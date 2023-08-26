@@ -27,7 +27,7 @@ export function DialogueSequencer({
         );
       })}
       {dialogue.answers && dialogue.answers.length > 0 && (
-        <div className="flex gap-12 mt-4 z-10">
+        <div className="flex gap-12 mt-4 z-10 justify-center ">
           {dialogue.answers.map((answer) => (
             <Button
               content={parseText(answer.content)}
