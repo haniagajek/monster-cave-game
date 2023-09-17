@@ -22,7 +22,9 @@ function Content() {
 export default function App() {
   return (
     <div className="bg-gray-900 w-screen h-screen text-green-400 flex justify-center align-middle items-center">
-      <Content />
+      <div id="game-content" className="w-2/4 h-3/4">
+        <Content />
+      </div>
     </div>
   );
 }

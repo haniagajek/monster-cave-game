@@ -265,7 +265,7 @@ export function Game(props) {
   //           EXEPT A PILE OF ROCKS, <br />
   //           YOU APROACH HER, SHE NOTICES YOU, TURNS YOUR WAY <br />
   //         </h1>
-  //         <p className="mb-2 font-mono text-2xl text-green-400  text-center animate-pulse ">
+          // <p className="mb-2 font-mono text-2xl text-green-400  text-center animate-pulse  ">
   //           OH IT'S YOU AGAIN, I'M SO HAPPY YOU CAME BACK, AS YOU PROMISED,{" "}
   //           <br />
   //           DO YOU HAVE THE THING?
